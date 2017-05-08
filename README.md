@@ -39,7 +39,7 @@ Constructor
 #### Arguments
 
 |type | name | description|
-| -- | -- | -- | --|
+| --- | --- | --- | 
 |String|name|Name of the box you want to send data about|
 |String|host|Host of the Smart Storage API|
 
@@ -52,12 +52,12 @@ Method for posting weight to the API
 
 #### Arguments
 |type | name | description|
-| -- | -- | -- | --|
+| --- | --- | --- | 
 |int|weight|Weight of the content in the box|
 
 #### Returns
 |type | description| 
-|  -- | -- |
+|  --- | --- |
 |bool | If the post to the API server succeeds |
 
 #### Use
@@ -68,14 +68,14 @@ Method for posting weight to the API
 Method for posting RFID to the API
 
 #### Arguments
-|type | name | description|
-| -- | -- | -- | --|
-|int|rfid|RFID value as int as scanned by RFID reader|
+| type  | name  | description   |
+| ---   | ---   | ---           |
+| int   | rfid  | RFID value as int as scanned by RFID reader |
 
 #### Returns
 |type | description |
-|  -- | -- |
-|bool | If the post to the API server succeeds |
+|---|---|
+| bool | If the post to the API server succeeds |
 
 #### Use
 `box.postRFID(rfid);`
@@ -85,13 +85,14 @@ Method for posting RFID to the API
 Method for posting activity to the API
 
 #### Arguments
-type | name | description
-|-- | -- | -- | --|
+| type  | name  | description   |
+|---    | ---   | ---           | 
+|de     |ee     |e              |
 
 #### Returns
-|type | description |
-|  -- | -- |
-|bool | If the post to the API server succeeds |
+| type | description |
+| --- | --- |
+| bool | If the post to the API server succeeds |
 
 #### Use
 `box.postActivity();`
