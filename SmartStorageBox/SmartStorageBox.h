@@ -40,6 +40,8 @@ public:
 
     bool postRFID(int rfid);
 
+    bool postRFID(String rfid);
+
     bool postActivity();
 
 private:

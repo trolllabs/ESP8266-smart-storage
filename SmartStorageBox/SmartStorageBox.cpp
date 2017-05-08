@@ -14,7 +14,11 @@ bool SmartStorageBox::postWeight(int weight){
 }
 
 bool SmartStorageBox::postRFID(int rfid){
-	return _post("box/rfid/", "{\"box\": \""+_name+"\",\"value\": \""+String(rfid)+"\"}");
+	return postRFID(String(rfid));
+}
+
+bool SmartStorageBox::postRFID(String rfid){
+	return _post("box/rfid/", "{\"box\": \""+_name+"\",\"value\": \""+rfid+"\"}");
 }
 
 bool SmartStorageBox::postActivity(){
