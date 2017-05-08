@@ -44,7 +44,7 @@ Constructor
 |String|host|Host of the Smart Storage API|
 
 #### Use
-`SmartStorageBox box(String name, String host);`
+`SmartStorageBox box("Box1"", "http://example.com");`
 
 
 ### postWeight
@@ -61,10 +61,14 @@ Method for posting weight to the API
 |bool | If the post to the API server succeeds |
 
 #### Use
-`box.postWeight(weight);`
+```
+SmartStorageBox box("Box1"", "http://example.com");
+int weight = 1;
+box.postWeight(weight);
+```
 
 
-### postRFID
+### postRFID(int)
 Method for posting RFID to the API
 
 #### Arguments
@@ -78,7 +82,31 @@ Method for posting RFID to the API
 | bool | If the post to the API server succeeds |
 
 #### Use
-`box.postRFID(rfid);`
+```
+SmartStorageBox box("Box1"", "http://example.com");
+int rfid = 29831;
+box.postRFID(rfid);
+```
+
+### postRFID(String)
+Method for posting RFID to the API
+
+#### Arguments
+| type  | name  | description   |
+| ---   | ---   | ---           |
+| String   | rfid  | RFID value as String as scanned by RFID reader |
+
+#### Returns
+|type | description |
+|---|---|
+| bool | If the post to the API server succeeds |
+
+#### Use
+```
+SmartStorageBox box("Box1"", "http://example.com");
+String rfid = "E2 4B A0 46";
+box.postRFID(rfid);
+```
 
 
 ### postActivity
@@ -87,7 +115,6 @@ Method for posting activity to the API
 #### Arguments
 | type  | name  | description   |
 |---    | ---   | ---           | 
-|de     |ee     |e              |
 
 #### Returns
 | type | description |
@@ -95,5 +122,8 @@ Method for posting activity to the API
 | bool | If the post to the API server succeeds |
 
 #### Use
-`box.postActivity();`
+```
+SmartStorageBox box("Box1"", "http://example.com");
+box.postActivity();
+```
 

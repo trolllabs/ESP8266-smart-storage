@@ -27,7 +27,7 @@ void setup() {
 void loop() {
     if((WiFiMulti.run() == WL_CONNECTED)) {
         box.postWeight(10);
-        box.postRFID("E2 46 4B A0");
+        box.postRFID("E2 4B A0 46");
         box.postActivity();
     }
     delay(10000);
