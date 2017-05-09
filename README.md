@@ -45,7 +45,7 @@ Constructor
 
 #### Use
 ```cpp
-SmartStorageBox box("Box1"", "http://example.com");
+SmartStorageBox box("Box1", "http://example.com");
 ```
 
 
@@ -64,7 +64,7 @@ Method for posting weight to the API
 
 #### Use
 ```cpp
-SmartStorageBox box("Box1"", "http://example.com");
+SmartStorageBox box("Box1", "http://example.com");
 int weight = 1;
 box.postWeight(weight);
 ```
@@ -85,7 +85,7 @@ Method for posting RFID to the API
 
 #### Use
 ```cpp
-SmartStorageBox box("Box1"", "http://example.com");
+SmartStorageBox box("Box1", "http://example.com");
 int rfid = 29831;
 box.postRFID(rfid);
 ```
@@ -105,7 +105,7 @@ Method for posting RFID to the API
 
 #### Use
 ```cpp
-SmartStorageBox box("Box1"", "http://example.com");
+SmartStorageBox box("Box1", "http://example.com");
 String rfid = "E2 4B A0 46";
 box.postRFID(rfid);
 ```
@@ -125,6 +125,6 @@ Method for posting activity to the API
 
 #### Use
 ```cpp
-SmartStorageBox box("Box1"", "http://example.com");
+SmartStorageBox box("Box1", "http://example.com");
 box.postActivity();
 ```
