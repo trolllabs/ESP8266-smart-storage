@@ -1,10 +1,7 @@
 # Smart Storage Box library for ESP8266 WiFi chips
-
-## Installation
-1. Download as zip
-2. Unzip
-3. Copy the folder "SmartStorageBox" into arduino-x.x.x/libraries/ (x..x.x stands for version number)
-4. restart the Arduino IDE
+This is a library that makes communication with the Smart Storage API easy.
+It requires the ESP8266 WiFi chip. The library contains methods for pushing data to the API.
+If necessary it can be extended to pull data from the server as well.
 
 ## Example usage
 ```cpp
@@ -30,6 +27,12 @@ void loop() {
     delay(1000);
 }
 ```
+
+## Installation
+1. Download as zip
+2. Unzip
+3. Copy the folder "SmartStorageBox" into arduino-x.x.x/libraries/ (x..x.x stands for version number)
+4. restart the Arduino IDE
 
 ## Documentation
 
@@ -128,3 +131,18 @@ Method for posting activity to the API
 SmartStorageBox box("Box1", "http://example.com");
 box.postActivity();
 ```
+
+## Authors
+
+* **Dag Frode Solberg** - *Initial work* - [DagF](https://github.com/DagF)
+
+See also the list of [contributors](https://github.com/trolllabs/ESP8266-smart-storage/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Trolllabs
+* Smart Storage group
