@@ -7,7 +7,7 @@
 4. restart the Arduino IDE
 
 ## Example usage
-```
+```cpp
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
 #include <ESP8266WiFiMulti.h>
@@ -44,7 +44,9 @@ Constructor
 |String|host|Host of the Smart Storage API|
 
 #### Use
-`SmartStorageBox box("Box1"", "http://example.com");`
+```cpp
+SmartStorageBox box("Box1"", "http://example.com");
+```
 
 
 ### postWeight
@@ -61,7 +63,7 @@ Method for posting weight to the API
 |bool | If the post to the API server succeeds |
 
 #### Use
-```
+```cpp
 SmartStorageBox box("Box1"", "http://example.com");
 int weight = 1;
 box.postWeight(weight);
@@ -82,7 +84,7 @@ Method for posting RFID to the API
 | bool | If the post to the API server succeeds |
 
 #### Use
-```
+```cpp
 SmartStorageBox box("Box1"", "http://example.com");
 int rfid = 29831;
 box.postRFID(rfid);
@@ -102,7 +104,7 @@ Method for posting RFID to the API
 | bool | If the post to the API server succeeds |
 
 #### Use
-```
+```cpp
 SmartStorageBox box("Box1"", "http://example.com");
 String rfid = "E2 4B A0 46";
 box.postRFID(rfid);
@@ -122,8 +124,7 @@ Method for posting activity to the API
 | bool | If the post to the API server succeeds |
 
 #### Use
-```
+```cpp
 SmartStorageBox box("Box1"", "http://example.com");
 box.postActivity();
 ```
-
